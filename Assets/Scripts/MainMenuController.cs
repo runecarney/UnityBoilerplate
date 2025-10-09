@@ -10,10 +10,16 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
     }
+
+    public void SettingsMenu()
+    {
+        SceneManager.LoadScene("Settings Menu");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
