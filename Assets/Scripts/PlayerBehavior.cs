@@ -17,10 +17,34 @@ public class PlayerBehavior : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + new Vector3(0.1f, 0, 0);
         }
-        
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity - new Vector3(0.1f, 0, 0);
         }
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity + new Vector3(0, 0.1f, 0);
+        }
     }
+
+        /* private Rigidbody rb;
+void Start()
+{
+    this.rb = GetComponent<Rigidbody>();
+}
+
+public void Update()
+{
+        if (Input.GetKey(KeyCode.UpArrow))
+            rb.velocity = rb.velocity + new Vector2(0, 6f);
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+            rb.velocity = rb.velocity - new Vector2(4f, 0); 
+        
+        if (Input.GetKey(KeyCode.RightArrow))
+        rb.velocity = rb.velocity + new Vector2(4f, 0); 
+}
+    } */
 }
